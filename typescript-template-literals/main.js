@@ -6,7 +6,7 @@ console.log('LearningFuze:', address);
 const firstName = 'Uzair';
 const lastName = 'Ashraf';
 const age = 25;
-const bio = `${firstName} ${lastName} ${age}`;
+const bio = `My name is ${firstName} ${lastName} and I am ${age} years old`;
 console.log('Bio:', bio);
 const fruit = 'apple';
 const item = 'pen';
