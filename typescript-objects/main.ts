@@ -23,8 +23,6 @@ const student: StudentProps = {
   firstName: 'Katelyn',
   lastName: 'Ngo',
   age: 28,
-  livesInIrvine: false,
-  previousOccupation: 'teacher',
 };
 console.log('value of student:', student);
 

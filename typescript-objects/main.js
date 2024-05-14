@@ -3,8 +3,6 @@ const student = {
   firstName: 'Katelyn',
   lastName: 'Ngo',
   age: 28,
-  livesInIrvine: false,
-  previousOccupation: 'teacher',
 };
 console.log('value of student:', student);
 const firstName = student.firstName;
