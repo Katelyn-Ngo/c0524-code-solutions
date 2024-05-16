@@ -1,4 +1,8 @@
 /* exported getLastNameOfPerson */
- function getLastNameOfPerson(person: object): object {
+interface Person {
+  firstName: string;
+  lastName: string;
+}
+function getLastNameOfPerson(person: Person): string {
   return person.lastName;
- }
+}

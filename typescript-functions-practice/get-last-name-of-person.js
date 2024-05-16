@@ -1,5 +1,4 @@
-"use strict";
-/* exported getLastNameOfPerson */
+'use strict';
 function getLastNameOfPerson(person) {
-    return person.lastName;
+  return person.lastName;
 }
