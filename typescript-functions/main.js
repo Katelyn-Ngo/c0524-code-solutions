@@ -11,19 +11,18 @@ const getArea = (width, height) => {
   return width * height;
 };
 console.log(getArea(17, 42));
-const getFirstName = (person) => {
-  return person.firstName;
-};
 const katelyn = {
   firstName: 'katelyn',
   lastName: 'ngo',
 };
-console.log(getFirstName);
-console.log(katelyn);
+const getFirstName = (person) => {
+  return person.firstName;
+};
+console.log(getFirstName(katelyn));
 const getLastElement = (array) => {
   return array.length - 1;
 };
-console.log(getLastElement);
+console.log(getLastElement([3, 6, 8]));
 function callOtherFunction(otherFunction, params) {
   return otherFunction(params);
 }

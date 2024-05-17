@@ -1,3 +1,7 @@
+interface Person {
+  firstName: string;
+  lastName: string;
+}
 function convertMinutesToSeconds(minutes: number): number {
   return minutes * 60;
 }
@@ -13,30 +17,21 @@ const getArea = (width: number, height: number): number => {
 };
 console.log(getArea(17, 42));
 
-const getFirstName = (person: {
-  firstName: string;
-  lastName: string;
-}): string => {
-  return person.firstName;
-};
-
-interface person {
-  firstName: string;
-  lastName: string;
-}
-const katelyn: person = {
+const katelyn: Person = {
   firstName: 'katelyn',
   lastName: 'ngo',
 };
 
-console.log(getFirstName);
-console.log(katelyn);
+const getFirstName = (person: Person): string => {
+  return person.firstName;
+};
+console.log(getFirstName(katelyn));
 
 const getLastElement = (array: any[]): number => {
   return array.length - 1;
 };
 
-console.log(getLastElement);
+console.log(getLastElement([3, 6, 8]));
 
 function callOtherFunction(otherFunction: Function, params: unknown): any {
   return otherFunction(params);
