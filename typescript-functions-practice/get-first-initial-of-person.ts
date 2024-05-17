@@ -1,9 +1,9 @@
 /* exported getFirstInitialOfPerson */
 interface Person {
-firstName: string;
-lastName: string;
+  firstName: string;
+  lastName: string;
 }
 
-function getFirstInitialOfPerson(person: Person): string {
+function getFirstInitialOfPerson(person: Person): any {
   return person.firstName[0];
 }

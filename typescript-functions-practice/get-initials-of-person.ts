@@ -4,7 +4,6 @@ interface Person {
   lastName: string;
 }
 
-function getInitialsOfPerson(person: Person): string {
+function getInitialsOfPerson(person: Person): any {
   return person.firstName[0] + person.lastName[0];
-
 }

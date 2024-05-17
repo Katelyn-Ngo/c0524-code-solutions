@@ -5,7 +5,7 @@ interface Person {
   birthPlace: string;
 }
 
-function getDescriptionOfPerson(person: Person): string {
+function getDescriptionOfPerson(person: Person): any {
   const name: string = person.name;
   const occupation: string = person.occupation;
   const birthPlace: string = person.birthPlace;

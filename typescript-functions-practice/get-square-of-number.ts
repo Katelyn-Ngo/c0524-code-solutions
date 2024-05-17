@@ -1,4 +1,4 @@
 /* exported getSquareOfNumber */
-function getSquareOfNumber(number: number): number {
+function getSquareOfNumber(number: number): any {
   return number * number;
 }

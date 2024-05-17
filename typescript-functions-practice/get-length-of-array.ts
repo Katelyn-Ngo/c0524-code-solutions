@@ -1,4 +1,4 @@
 /* exported getLengthOfArray */
-function getLengthOfArray(array: unknown[]): unknown {
+function getLengthOfArray(array: unknown[]): any {
   return array.length;
 }

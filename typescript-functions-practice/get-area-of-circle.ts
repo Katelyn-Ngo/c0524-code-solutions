@@ -1,4 +1,4 @@
 /* exported getAreaOfCircle */
-function getAreaOfCircle(radius : number): number {
+function getAreaOfCircle(radius: number): any {
   return Math.PI * (radius * radius);
 }

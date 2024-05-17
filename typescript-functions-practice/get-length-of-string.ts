@@ -1,4 +1,4 @@
 /* exported getLengthOfString */
-function getLengthOfString(string: string): number {
-return string.length;
+function getLengthOfString(string: string): any {
+  return string.length;
 }
