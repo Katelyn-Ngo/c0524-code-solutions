@@ -5,16 +5,16 @@
 body {
   margin: 0;
   font-family: Poppins, sans-serif;
-  background-color: rgba(187, 206, 216, 0.965);
 }
 
 section {
   padding: 1.5rem 0;
+  background-color: rgba(187, 206, 216, 0.965);
 }
 
 h2 {
   margin-bottom: 3.5rem;
-  font-family: Poppins, sans-serif;
+  font-family: Roboto, sans-serif;
   font-size: 2rem;
   text-align: center;
   font-weight: 300;
