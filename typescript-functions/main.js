@@ -26,4 +26,4 @@ console.log(getLastElement([3, 6, 8]));
 function callOtherFunction(otherFunction, params) {
   return otherFunction(params);
 }
-console.log(callOtherFunction);
+console.log(callOtherFunction(getFirstName, katelyn));

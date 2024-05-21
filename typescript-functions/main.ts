@@ -37,4 +37,4 @@ function callOtherFunction(otherFunction: Function, params: unknown): any {
   return otherFunction(params);
 }
 
-console.log(callOtherFunction);
+console.log(callOtherFunction(getFirstName, katelyn));
