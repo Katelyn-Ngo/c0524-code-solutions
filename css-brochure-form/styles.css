@@ -1,0 +1,60 @@
+h1 {
+  text-align: center;
+  font-family: Roboto, sans-serif;
+  font-weight: normal;
+  color: lightcoral;
+  font-variant: small-caps;
+  font-size: x-large;
+}
+
+form {
+  text-align: center;
+  font-family: roboto, sans-serif;
+  font-size: 14px;
+}
+
+.uppercase {
+  text-transform: uppercase;
+  padding-right: 330px;
+}
+
+.name {
+  text-transform: uppercase;
+  padding-right: 400px;
+}
+
+.place {
+  text-transform: uppercase;
+  padding-right: 280px;
+}
+
+.amount {
+  text-transform: uppercase;
+}
+
+input,
+select {
+  width: 440px;
+  height: 30px;
+}
+
+div.margin-top {
+  margin-top: 10px;
+}
+
+div.button {
+  text-align: right;
+  padding-right: 300px;
+}
+
+button {
+  margin-top: 10px;
+  text-transform: uppercase;
+  font-family: Roboto, sans-serif;
+  color: white;
+  background: rgb(243, 123, 76);
+  border-radius: 100px;
+  width: 70px;
+  height: 30px;
+  border-color: transparent;
+}
