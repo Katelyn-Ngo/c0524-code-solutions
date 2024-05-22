@@ -1,0 +1,25 @@
+button.button {
+  color: black;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 24px;
+  background-color: rgba(226, 215, 215, 0.865);
+}
+
+button:hover {
+  color: white;
+  background-color: rgb(16, 15, 15);
+  cursor: pointer;
+}
+
+* thead {
+  color: white;
+  background-color: black;
+}
+
+* th {
+  background-color: black;
+}
+
+tr:nth-child(odd) {
+  background-color: lightgray;
+}
