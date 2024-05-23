@@ -44,7 +44,7 @@ div.margin-top {
 
 div.button {
   text-align: right;
-  padding-right: 300px;
+  padding-right: 490px;
 }
 
 button {
@@ -54,7 +54,7 @@ button {
   color: white;
   background: rgb(243, 123, 76);
   border-radius: 100px;
-  width: 70px;
+  width: 90px;
   height: 31px;
   border-color: transparent;
 }
