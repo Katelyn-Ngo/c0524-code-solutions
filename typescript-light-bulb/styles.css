@@ -1,0 +1,29 @@
+.background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.lightBulb {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+}
+
+.bg-day {
+  background-color: #fef9f1;
+}
+
+.lb-day {
+  background-color: #faea84;
+}
+
+.bg-night {
+  background-color: black;
+}
+
+.lb-night {
+  background-color: darkgray;
+  box-shadow: 0 0 20px rgba(154, 151, 151, 0.9);
+}
