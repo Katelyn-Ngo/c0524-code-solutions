@@ -10,10 +10,9 @@ function getRangeReport(start: number, end: number): rangeReport {
   if (typeof start !== 'number' || typeof end !== 'number' || start > end) {
     throw new Error('invalid input');
   }
-  let total = 0;
+  const total = 0;
   const odds: number[] = [];
   const evens: number[] = [];
   const range: number[] = [];
-  for (let i = start; i <= end; i++) {
-
-  }
+  for (let i = start; i <= end; i++) {}
+}
