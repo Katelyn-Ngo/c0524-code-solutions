@@ -1,10 +1,10 @@
 interface Book {
-  title?: string;
-  author?: string;
-  libraryId?: number;
+  title: string;
+  author: string;
+  libraryId: number;
 }
 
-const book1 = {
+const book1: Book = {
   title: 'Goodnight Punpun',
   author: 'Inio Asano',
   libraryId: 3353,
@@ -15,7 +15,7 @@ console.log(
   `The title of the book is ${title}, the author is ${author}, and the library id is ${libraryId}`
 );
 
-const book2 = {
+const book2: Book = {
   title: 'Les Fleurs du mal',
   author: 'Charles Baudelaire',
   libraryId: 2345,
