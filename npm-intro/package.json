@@ -1,0 +1,12 @@
+{
+  "name": "test-npm",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "server.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "scripts": {
+    "hello": "echo Hello, LearningFuze"
+  }
+}
