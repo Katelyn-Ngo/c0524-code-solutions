@@ -8,5 +8,11 @@
   "license": "ISC",
   "scripts": {
     "hello": "echo Hello, LearningFuze"
+  },
+  "dependencies": {
+    "jquery": "^3.7.1"
+  },
+  "devDependencies": {
+    "eslint": "^9.4.0"
   }
 }
