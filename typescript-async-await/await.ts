@@ -12,12 +12,12 @@ async function readOnce(): Promise<void> {
 }
 
 async function readSeveral(): Promise<void> {
-  let msg = await read('foo1/bar.html');
-  console.log(elapsed(), 'readSeveral1', msg);
-  msg = await read('foo2/bar.html');
-  console.log(elapsed(), 'readSeveral2:', msg);
-  msg = await read('foo3/bar.html');
-  console.log(elapsed(), 'readSeveral3:', msg);
+  const msg1 = await read('foo1/bar.html');
+  console.log(elapsed(), 'readSeveral1', msg1);
+  const msg2 = await read('foo2/bar.html');
+  console.log(elapsed(), 'readSeveral2:', msg2);
+  const msg3 = await read('foo3/bar.html');
+  console.log(elapsed(), 'readSeveral3:', msg3);
 }
 
 async function readChained(): Promise<void> {
@@ -29,6 +29,6 @@ async function readChained(): Promise<void> {
   console.log(elapsed(), 'readChained3:', msg3);
 }
 
-readOnce()
-  .then(() => readSeveral())
-  .then(() => readChained());
+await readOnce();
+await readSeveral();
+await readChained();

@@ -12,12 +12,12 @@ async function throwOnce(): Promise<void> {
 }
 
 async function throwSeveral(): Promise<void> {
-  let msg = await read('foo1', false);
-  console.log(elapsed(), 'throwSeveral1:', msg);
-  msg = await read('foo2', false);
-  console.log(elapsed(), 'throwSeveral2:', msg);
-  msg = await read('foo3', false);
-  console.log(elapsed(), 'throwSeveral3:', msg);
+  const msg1 = await read('foo1', false);
+  console.log(elapsed(), 'throwSeveral1:', msg1);
+  const msg2 = await read('foo2', false);
+  console.log(elapsed(), 'throwSeveral2:', msg2);
+  const msg3 = await read('foo3', false);
+  console.log(elapsed(), 'throwSeveral3:', msg3);
 }
 
 async function throwChained(): Promise<void> {
@@ -28,13 +28,11 @@ async function throwChained(): Promise<void> {
   const msg3 = await read(msg2, false);
   console.log(elapsed(), 'throwChained3:', msg3);
 }
-async function runAll(): Promise<void> {
-  try {
-    await throwOnce();
-    await throwSeveral();
-    await throwChained();
-  } catch (error) {
-    console.log(elapsed(), 'Error:', error);
-  }
+
+try {
+  await throwOnce();
+  await throwSeveral();
+  await throwChained();
+} catch (error) {
+  console.log(elapsed(), 'Error:', error);
 }
-runAll();
