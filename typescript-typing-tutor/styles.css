@@ -1,0 +1,25 @@
+body {
+  font-family: 'Courier New', Courier, monospace;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #fff;
+}
+
+#text {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.correct {
+  color: chartreuse;
+}
+
+.incorrect {
+  color: red;
+}
+
+.current {
+  text-decoration: underline;
+}
