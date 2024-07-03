@@ -28,18 +28,9 @@ export function App() {
   return (
     <>
       <Header headerText={headerText} />
-      <ImageContainer
-        imageSrc={imageSrc[currentIndex]}
-        onClick={handleNextImage}
-      />
-      <ImageCaption
-        caption={captions[currentIndex]}
-        onClick={handleNextImage}
-      />
-      <ImageDescription
-        description={imageDescrip[currentIndex]}
-        onClick={handleNextImage}
-      />
+      <ImageContainer imageSrc={imageSrc[currentIndex]} />
+      <ImageCaption caption={captions[currentIndex]} />
+      <ImageDescription description={imageDescrip[currentIndex]} />
       <ButtonContainer
         buttonText={buttonText}
         onButtonClick={handleNextImage}
