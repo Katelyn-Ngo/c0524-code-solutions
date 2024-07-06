@@ -9,10 +9,7 @@ type Pokemon = {
 
 export function PokemonList({ pokedex }: Props) {
   const pokemonItems = pokedex.map((pokemon) => (
-    <li key={pokemon.number}>
-      {pokemon.name}
-      {pokemon.number}
-    </li>
+    <li key={pokemon.number}>{pokemon.name}</li>
   ));
 
   return <ul>{pokemonItems}</ul>;
