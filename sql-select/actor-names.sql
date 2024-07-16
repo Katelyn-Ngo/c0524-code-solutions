@@ -1,1 +1,2 @@
-SELECT "actorId", "firstName", "lastName" FROM "actors"
+SELECT "actorId", "firstName", "lastName"
+FROM "actors"

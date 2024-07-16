@@ -1,1 +1,3 @@
-SELECT "filmId", "title", "description", "length" FROM "films" WHERE "rating" = 'R';
+SELECT "filmId", "title", "description", "length"
+FROM "films"
+WHERE "rating" = 'R';

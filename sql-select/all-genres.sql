@@ -1,1 +1,2 @@
-SELECT * FROM "genres";
+SELECT *
+ FROM "genres";

@@ -1,1 +1,3 @@
-SELECT * FROM "actors" WHERE "actorId" = 40;
+SELECT *
+FROM "actors"
+WHERE "actorId" = 40;

@@ -1,1 +1,3 @@
-SELECT "email" FROM "customers" WHERE "storeId" = 2;
+SELECT "email"
+ FROM "customers"
+ WHERE "storeId" = 2;
