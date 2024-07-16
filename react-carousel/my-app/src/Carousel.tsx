@@ -16,7 +16,7 @@ export function Carousel({ images }: Props) {
       setActivePicture((prevIndex) => (prevIndex + 1) % images.length);
     }, 3000);
     return () => clearInterval(interval);
-  }, [images.length]);
+  }, [images]);
 
   const goToNext = () => {
     setActivePicture((nextPic) => (nextPic + 1) % images.length);
