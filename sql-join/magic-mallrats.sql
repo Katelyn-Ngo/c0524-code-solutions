@@ -12,6 +12,4 @@ using ("inventoryId")
 join
 "films"
 using ("filmId")
-where "films". "title" = 'Magic Mallrats'
-
-
+where "title" = 'Magic Mallrats'
