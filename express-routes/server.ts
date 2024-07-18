@@ -7,19 +7,16 @@ app.use((req, res, next) => {
   next();
 });
 
-app.get('/', (req, res, next) => {
+app.get('/', (req, res) => {
   res.send('Hello Notes');
-  next();
 });
 
-app.get('/notes', (req, res, next) => {
+app.get('/notes', (req, res) => {
   res.send('get got them notes');
-  next();
 });
 
-app.post('/notes/123', (req, res, next) => {
+app.post('/notes/123', (req, res) => {
   res.send('note 123 has been created');
-  next();
 });
 
 app.listen(8080, () => {
