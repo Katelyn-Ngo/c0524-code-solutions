@@ -11,11 +11,11 @@ Answer the following questions in the provided markdown file before turning in t
 - Which HTTP method does a browser issue to a web server when you visit a URL?
   the GET method
 - What is on the first line of an HTTP **request** message?
-  requests sent by the client to trigger an action on the server,
+  HTTP method, request target and HTTP version
 - What is on the first line of an HTTP **response** message?
-  responses, the answer from the server.
+  protocol version, status code, and status text
 - What are HTTP headers?
-  Metadata in an HTTP request or response that provides information about the message or the resource being fetched or sent.
+  provides additional information about request/response. Metadata in an HTTP request or response that provides information about the message or the resource being fetched or sent.
 - Is a body required for a valid HTTP message?
   no, it depends on the method and context
 
