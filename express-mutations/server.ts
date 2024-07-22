@@ -57,30 +57,25 @@ app.put('/api/actors/:actorId', async (req, res, next) => {
   try {
     const { firstName, lastName } = req.body;
     const { actorId } = req.params;
+    if (!Number.isInteger(+actorId)) {
+      throw new ClientError(400, 'actorId needs to be an integer');
+    }
     if (!firstName || !lastName) {
       throw new ClientError(
         400,
         'missing required fields of firstName and lastName'
       );
     }
-    const checkSql = `
-    select * from "actors"
-    where "actorId" = $1`;
-    const checkParams = [actorId];
-    const checkResult = await db.query(checkSql, checkParams);
-    const actor = checkResult.rows[0];
-    if (!actor) {
-      throw new ClientError(400, `actor ${actorId} not found`);
-    }
-    const updateSql = `
+
+    const sql = `
     update "actors"
     set "firstName" = $1, "lastName" = $2
     where "actorId" = $3
     returning *`;
-    const updateParams = [firstName, lastName, actorId];
-    const updateResult = await db.query(updateSql, updateParams);
-    const updateActor = updateResult.rows[0];
-    res.status(200).json(updateActor);
+    const params = [firstName, lastName, actorId];
+    const result = await db.query(sql, params);
+    const actor = result.rows[0];
+    res.status(200).json(actor);
   } catch (error) {
     next(error);
   }
@@ -89,19 +84,21 @@ app.put('/api/actors/:actorId', async (req, res, next) => {
 app.delete('/api/actors/:actorId', async (req, res, next) => {
   try {
     const { actorId } = req.params;
-
-    const deleteSql = `
+    if (!Number.isInteger(+actorId)) {
+      throw new ClientError(400, 'actorId needs to be an integer');
+    }
+    const sql = `
     delete from "actors"
     where "actorId" = $1
     returning *;`;
 
-    const deleteParams = [actorId];
-    const deleteResult = await db.query(deleteSql, deleteParams);
-    const deleteActor = deleteResult.rows[0];
-    if (!deleteActor) {
+    const params = [actorId];
+    const result = await db.query(sql, params);
+    const actor = result.rows[0];
+    if (!actor) {
       throw new ClientError(404, `actorId ${actorId} not found`);
     }
-    res.status(204).send();
+    res.sendStatus(204);
   } catch (error) {
     next(error);
   }

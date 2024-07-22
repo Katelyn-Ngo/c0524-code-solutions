@@ -5,9 +5,11 @@
 Answer the following questions in the provided markdown file before turning in this exercise:
 
 - What is the significance of an HTTP request's method?
-  specify a desired action to be performed on the identified resource. GET(retrieve), POST (create), PUT( update), DELETE
+  specify a desired action to be performed on the identified resource. GET(retrieve), POST (create), PUT( update), DELETE.
+  additional way for client and server to communicate
 - What is the significance of an HTTP response's status?
-  http response status code indicates the result of the server's attempt to fulfill client's request. informational (100), success(200), redirection(300), client error(400), server error(500)
+  http response status code indicates the result of the server's attempt to fulfill client's request. informational (100), success(200), redirection(300), client error(400), server error(500).
+  let server communicate with client.
 - What does the express.json() middleware do and when would you need it?
   parses incoming JSON payloads and make the data available in `req.body` essential for handling JSON data in express applications.
 
