@@ -29,9 +29,9 @@ export function Users() {
         }
         const data = (await response.json()) as User[];
         setUsers(data);
-        setIsLoading(false);
       } catch (err) {
         setError(err);
+      } finally {
         setIsLoading(false);
       }
     };

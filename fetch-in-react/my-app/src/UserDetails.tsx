@@ -24,9 +24,9 @@ export function UserDetails({ userId, onCancel }: Props) {
         }
         const data = (await response.json()) as User;
         setUser(data);
-        setIsLoading(false);
       } catch (err) {
         setError(err);
+      } finally {
         setIsLoading(false);
       }
     };
